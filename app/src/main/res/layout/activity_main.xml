@@ -16,7 +16,8 @@
         app:layout_constraintEnd_toStartOf="@+id/etSecond"
         app:layout_constraintHorizontal_bias="0.5"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintTop_toTopOf="parent"
+        />
 
     <EditText
         android:id="@+id/etSecond"
@@ -52,15 +53,29 @@
 
     <ImageView
         android:id="@+id/ImView"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:background="#FFCC00"
+        android:scaleType="centerCrop"
+        tools:src="@tools:sample/backgrounds/scenic"
+        app:layout_constraintDimensionRatio="1:1"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.5"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/button"
-        app:layout_constraintVertical_bias="0.5"
-        />
-<!-- android:src="@drawable/ic_launcher_background"-->
+        app:layout_constraintTop_toBottomOf="@+id/butImage"
+        app:layout_constraintVertical_bias="0.5" />
+
+    <Button
+        android:id="@+id/butImage"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="40dp"
+        android:text="img"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/button" />
+    <!-- android:src="@drawable/ic_launcher_background"-->
 
 </androidx.constraintlayout.widget.ConstraintLayout>
