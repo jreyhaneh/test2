@@ -51,14 +51,14 @@ class MainActivity : AppCompatActivity() {
 //            binding.ImView.setImageURI(uri)
 //    }
 
-        binding.butPermission.setOnClickListener {
+        binding.butPermission.setOnClickListener {      //permission
             requestPermission()
         }
 
 
     }
 
-    private fun hasWriteExternalStoragePermission() =
+    private fun hasWriteExternalStoragePermission() =       //permission
         if (Build.VERSION.SDK_INT < Build.VERSION_CODES.TIRAMISU){
             ActivityCompat.checkSelfPermission(
                 this,
