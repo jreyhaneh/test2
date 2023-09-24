@@ -1,3 +1,12 @@
 <resources>
     <string name="app_name">test2</string>
+    <string-array name="week">
+        <item>saturday</item>
+        <item>sunday</item>
+        <item>monday</item>
+        <item>tuesday</item>
+        <item>wednesday</item>
+        <item>thursday</item>
+        <item>friday</item>
+    </string-array>
 </resources>
